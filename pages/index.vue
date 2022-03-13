@@ -33,7 +33,9 @@ export default {
   methods: {
     fetchData: function () {
       axios
-        .get("https://jsonplaceholder.typicode.com/users/")
+        .get(
+          "https://raw.githubusercontent.com/limjaehee/axios-/main/user.json"
+        )
         .then((response) => {
           this.userList = response.data;
         })
